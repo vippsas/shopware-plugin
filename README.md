@@ -5,6 +5,7 @@ sidebar_position: 1
 description: Provide Vipps and MobilePay payments for Shopware.
 pagination_next: null
 pagination_prev: null
+draft: true
 ---
 END_METADATA -->
 
