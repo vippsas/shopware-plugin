@@ -1,8 +1,8 @@
 <!-- START_METADATA
 ---
-title: "Vipps/MobilePay for WooCommerce plugin"
+title: "Vipps/MobilePay for Shopware plugin"
 sidebar_position: 1
-description: Provide Vipps payments for WooCommerce.
+description: Provide Vipps and MobilePay payments for Shopware.
 pagination_next: null
 pagination_prev: null
 ---
@@ -13,11 +13,6 @@ END_METADATA -->
 
 
 ![Support and development by Wexo ](./docs/images/wexo.svg#gh-light-mode-only)![Support and development by Wexo](./docs/images/wexo_dark.svg#gh-dark-mode-only)
-
-
-![Vipps](./docs/images/vipps.svg) *Available for Vipps.*
-
-![MobilePay](./docs/images/mp.svg) *Will be available for MobilePay in Finland and Denmark in Q1 2024.*
 
 
 *This plugin is built and maintained by [Wexo](https://www.wexo.dk/).*
