@@ -67,5 +67,5 @@ See [How to find the API keys](https://developer.vippsmobilepay.com/docs/develop
 
 ## How can I get help if I have any issues?
 
-For issues with your Vipps/MobilePay plugin for Shopware installation, [contact wexa](). For other issues, contact [Vipps MobilePay](https://developer.vippsmobilepay.com/docs/contact/).
+For issues with your Vipps/MobilePay plugin for Shopware installation, [contact wexa](https://www.wexo.dk/kontakt). For other issues, contact [Vipps MobilePay](https://developer.vippsmobilepay.com/docs/contact/).
 
