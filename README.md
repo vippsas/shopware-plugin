@@ -26,19 +26,9 @@ END_METADATA -->
 
 ## Description
 
-## Checkout
-
-*Checkout is still in beta mode in Finland, bank transfer has limited availability.*
-
-With Checkout enabled in the plugin, you will get a complete checkout in your webshop, designed and run by Vipps MobilePay.
-Your customers can pay with Vipps, MobilePay, VISA or MasterCard, and they can also provide their shipping address and choose their preferred shipping method in a simple manner.
-For Finland, it is also possible to activate bank transfer as a payment method, with some restrictions.
-VISA/MasterCard payments will be coming soon for MobilePay.
-
-
 ## Single Payments
 
-When you enable this plugin, your customers will be able to choose Vipps or MobilePay as a payment method directly in the checkout. There is no need to go via a third party payment method. When choosing Vipps/MobilePay, user fills in name and address and is then asked to enter phone number in the Vipps/MobilePay landing page. User confirms the payment in the Vipps or MobilePay app.
+When you enable this plugin, your customers will be able to choose Vipps or MobilePay as a payment method directly in the checkout. There is no need to go via a third-party payment method. When choosing Vipps/MobilePay, user fills in name and address and is then asked to enter phone number in the Vipps/MobilePay landing page. User confirms the payment in the Vipps or MobilePay app.
 
 ## How to get started
 
