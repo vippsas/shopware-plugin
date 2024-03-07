@@ -79,7 +79,7 @@ If the order only contains virtual and downloadable products, the plugin will ca
 
 ## How can I get help if I have any issues?
 
-For issues with your Vipps/MobilePay plugin for Shopware installation, [contact wexa](https://www.wexo.dk/kontakt). For other issues, contact [Vipps MobilePay](https://developer.vippsmobilepay.com/docs/contact/).
+For issues with your Vipps/MobilePay plugin for Shopware installation, [contact Wexo](https://www.wexo.dk/kontakt). For other issues, contact [Vipps MobilePay](https://developer.vippsmobilepay.com/docs/contact/).
 
 
 ### General FAQs
