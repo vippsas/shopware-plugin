@@ -1,0 +1,19 @@
+{
+  "mobilepay-api-test-button": {
+    "title": "API Test",
+    "success": "Tilkobling testet med suksess",
+    "error": "Tilkoblingen kunne ikke opprettes. Vennligst sjekk tilgangsdataene"
+  },
+  "vipps-mobilepay": {
+    "tabDetails": "Vipps MobilePay",
+    "capture": "Fang",
+    "partialCapture": "Delvis fangst",
+    "maxCapture": "Fangst MAX",
+    "refund": "Refusjon",
+    "cancel": "Avbryt",
+    "info-box": {
+      "title": "Merk:",
+      "information": "Reservasjoner med MobilePay blir kansellert etter 7 dager. Husk å sende og fullføre bestillingene dine."
+    }
+  }
+}

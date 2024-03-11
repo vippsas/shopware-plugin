@@ -1,0 +1,10 @@
+{% block sw_order_detail_content_tabs_extension %}
+    <sw-tabs-item
+            v-if="!isOrderEditing"
+            class="sw-order-detail__tabs-tab-vippsMobilePay"
+            :route="{ name: 'vipps.mobilepay', params: { id: $route.params.id } }"
+            :title="$tc('vipps-mobilepay.tabDetails')"
+    >
+        {{ $tc('vipps-mobilepay.tabDetails') }}
+    </sw-tabs-item>
+{% endblock %}

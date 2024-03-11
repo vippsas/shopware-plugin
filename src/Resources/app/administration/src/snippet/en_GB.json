@@ -1,0 +1,19 @@
+{
+  "mobilepay-api-test-button": {
+    "title": "API Test",
+    "success": "Connection tested with success",
+    "error": "Connection could not be established. Please check the access data"
+  },
+  "vipps-mobilepay": {
+    "tabDetails": "Vipps MobilePay",
+    "capture": "Capture",
+    "partialCapture": "Partial Capture",
+    "maxCapture": "Capture MAX",
+    "refund": "Refund",
+    "cancel": "Cancel",
+    "info-box": {
+      "title": "Note:",
+      "information": "Reservations with MobilePay will be cancelled after 7 days. Remember to ship and fulfill your orders."
+    }
+  }
+}

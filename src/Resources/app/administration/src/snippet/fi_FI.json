@@ -1,0 +1,19 @@
+{
+  "mobilepay-api-test-button": {
+    "title": "API-testi",
+    "success": "Yhteys testattu onnistuneesti",
+    "error": "Yhteyttä ei voitu muodostaa. Tarkista pääsytiedot"
+  },
+  "vipps-mobilepay": {
+    "tabDetails": "Vipps MobilePay",
+    "capture": "Vangitse",
+    "partialCapture": "Osittainen vanginta",
+    "maxCapture": "Vangitse MAX",
+    "refund": "Palauta",
+    "cancel": "Peruuta",
+    "info-box": {
+      "title": "Huomaa:",
+      "information": "Varaukset MobilePayn kanssa peruutetaan 7 päivän kuluttua. Muista lähettää ja täyttää tilauksesi."
+    }
+  }
+}

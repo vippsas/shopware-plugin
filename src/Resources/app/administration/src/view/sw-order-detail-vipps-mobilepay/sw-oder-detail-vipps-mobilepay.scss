@@ -1,0 +1,26 @@
+.sw-container .lineInfo:nth-child(odd) {
+  background-color: white;
+}
+
+.sw-container .lineInfo:nth-child(even) {
+  background-color: #efefef;
+}
+
+.lineInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-input-container {
+  display: flex;
+  .sw-field {
+    margin-bottom: unset;
+  }
+
+  .sw-block-field {
+    .sw-block-field__block {
+      border-left: none;
+      margin-left:-5px;
+    }
+  }
+}

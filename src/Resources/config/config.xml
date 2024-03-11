@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>API Settings</title>
+        <component name="vipps-mobilepay-info-box">
+            <name>informationbox</name>
+        </component>
+        <input-field type="single-select">
+            <name>apiUrl</name>
+            <label>API Endpoint</label>
+            <label lang="da-DK">API Endpoint</label>
+            <label lang="de-DE">API-Endpunkt</label>
+            <options>
+                <option>
+                    <id>https://apitest.vipps.no</id>
+                    <name>Test environment</name>
+                    <name lang="da-DK">Test miljø</name>
+                    <name lang="de-DE">Testumgebung</name>
+                </option>
+                <option>
+                    <id>https://api.vipps.no</id>
+                    <name>Production environment</name>
+                    <name lang="da-DK">Produktionsmiljø</name>
+                    <name lang="de-DE">Produktionsumfeld</name>
+                </option>
+            </options>
+            <defaultValue>https://apitest.vipps.no/</defaultValue>
+        </input-field>
+
+        <input-field>
+            <name>vippsMobilepayMSN</name>
+            <label>Vipps Mobilepay MSN</label>
+        </input-field>
+
+        <input-field>
+            <name>vippsMobilepayClientId</name>
+            <label>Vipps Mobilepay Client id</label>
+        </input-field>
+        <input-field type="password">
+            <name>vippsMobilepayClientSecret</name>
+            <label>Vipps Mobilepay Client secret</label>
+        </input-field>
+
+        <input-field>
+            <name>vippsMobilepayOcpApimSubscriptionKeyPrimary</name>
+            <label>Vipps Mobilepay Ocp Apim Subscription Key (Primary)</label>
+        </input-field>
+
+        <input-field>
+            <name>vippsMobilepayOcpApimSubscriptionKeySecondary</name>
+            <label>Vipps Mobilepay Ocp Apim Subscription Key (Secondary)</label>
+        </input-field>
+
+        <component name="mobilepay-api-test-button">
+            <name>mobilepayApiTest</name>
+            <btnLabel>Test API Connection</btnLabel>
+        </component>
+    </card>
+    <card>
+        <title>Vipps MobilePay Settings</title>
+        <input-field type="bool">
+            <name>debug</name>
+            <label>Enable enhanced logging</label>
+            <defaultValue>false</defaultValue>
+        </input-field>
+    </card>
+</config>

@@ -1,0 +1,17 @@
+{
+  "mobilepay-api-test-button": {
+    "title": "API Test",
+    "success": "Verbindung wurde erfolgreich getestet",
+    "error": "Verbindung konnte nicht hergestellt werden. Bitte prüfe die Zugangsdaten"
+  },
+  "vipps-mobilepay": {
+    "tabDetails": "Vipps MobilePay",
+    "capture": "Einfangen",
+    "refund": "Rückerstattung",
+    "cancel": "Annullieren",
+    "info-box": {
+      "title": "Notiz:",
+      "information": "Reservierungen mit MobilePay werden nach 7 Tagen storniert. Denken Sie daran, Ihre Bestellungen zu versenden und auszuführen."
+    }
+  }
+}

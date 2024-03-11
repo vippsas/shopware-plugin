@@ -1,0 +1,57 @@
+{
+    "name": "vipps/mobilepay-epayment",
+    "description": "Shopware 6 module for accepting Vipps MobilePay payments",
+    "type": "shopware-platform-plugin",
+    "license": "proprietary",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Vipps MobilePay"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Vipps\\Mobilepay\\": "src/"
+        }
+    },
+    "require": {
+        "shopware/core": "~6.5.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "Vipps\\Mobilepay\\VippsMobilepayEpayment",
+        "plugin-icon": "src/Resources/config/plugin.png",
+        "copyright": "(c) by WEXO A/S",
+        "label": {
+            "da-DK": "Vipps MobilePay ePayment",
+            "en-GB": "Vipps MobilePay ePayment",
+            "de-DE": "Vipps MobilePay ePayment",
+            "fi-FI": "Vipps MobilePay ePayment",
+            "nb-NO": "Vipps MobilePay ePayment",
+            "sv-SE": "Vipps MobilePay ePayment"
+        },
+        "description": {
+            "da-DK": "Shopware 6 plugin til Mobilepay betalinger gennem Vipps",
+            "en-GB": "Shopware 6 module for accepting Mobilepay payments through Vipps",
+            "de-DE": "Shopware 6-Modul zur Annahme von Mobilepay-Zahlungen über Vipps",
+            "fi-FI": "Shopware 6 -laajennus Mobilepay-maksuihin Vippsin kautta",
+            "nb-NO": "Shopware 6-plugin for Mobilepay-betalinger gjennom Vipps",
+            "sv-SE": "Shopware 6 plugin för Mobilepay-betalningar via Vipps"
+        },
+        "manufacturerLink": {
+            "dk-DK": "https://vippsmobilepay.com/",
+            "en-GB": "https://vippsmobilepay.com/",
+            "de-DE": "https://vippsmobilepay.com/",
+            "fi-FI": "https://vippsmobilepay.com/",
+            "nb-NO": "https://vippsmobilepay.com/",
+            "sv-SE": "https://vippsmobilepay.com/"
+        },
+        "supportLink": {
+            "da-DK": "https://vippsmobilepay.com/help",
+            "en-GB": "https://vippsmobilepay.com/help",
+            "de-DE": "https://vippsmobilepay.com/help",
+            "fi-FI": "https://vippsmobilepay.com/help",
+            "nb-NO": "https://vippsmobilepay.com/help",
+            "sv-SE": "https://vippsmobilepay.com/help"
+        }
+    }
+}

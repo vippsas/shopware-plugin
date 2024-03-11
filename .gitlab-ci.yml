@@ -1,0 +1,208 @@
+image: docker:latest
+
+# Remove comments from file to enable automatic store.shopware.com deployments of repository.
+
+stages:
+  - syntax
+  - automated-test
+#  - validate-plugin
+#  - update-plugin-listing
+#  - publish-plugin
+
+before_script:
+  - source ci/prepare
+
+#variables:
+#  FROSH_UPLOADER_IMAGE: registry.services.wexo.dk:4567/wexo-services/docker-magento:froshpluginuploader-0.3.19
+#  ACCOUNT_USER: $SHOPWARE_STORE_USER
+#  ACCOUNT_PASSWORD: $SHOPWARE_STORE_PASSWORD
+
+codesniffer:
+  stage: syntax
+  image: registry.services.wexo.dk:4567/wexo-services/docker-magento/shopware-plugins-quality-php:8.0-fpm
+  script:
+    - ~/phpcs.sh
+  allow_failure: false
+
+#validate-plugin:
+#  stage: validate-plugin
+#  image:
+#    name: $FROSH_UPLOADER_IMAGE
+#    entrypoint: ["/bin/sh", "-c"]
+#  script:
+#    - output=`php /app/bin/pluginupload ext:zip --strategy plain . | awk '{print $NF}'`
+#    - php /app/bin/pluginupload ext:validate $output
+
+#update-plugin-listing:
+#  needs: ["validate-plugin"]
+#  stage: update-plugin-listing
+#  except:
+#    - branches
+#  image:
+#    name: $FROSH_UPLOADER_IMAGE
+#    entrypoint: ["/bin/sh", "-c"]
+#  script:
+#    - php /app/bin/pluginupload ext:update .
+
+#upload-plugin:
+#  needs: ["validate-plugin"]
+#  stage: publish-plugin
+#  only:
+#    - tags
+#  except:
+#    - branches
+#  when: manual
+#  image:
+#    name: $FROSH_UPLOADER_IMAGE
+#    entrypoint: ["/bin/sh", "-c"]
+#  script:
+#    - output=`php /app/bin/pluginupload ext:zip . | awk '{print $NF}'`
+#    - php /app/bin/pluginupload ext:upload $output
+
+
+variables:
+  PLUGIN_NAME: WexoPluginGenerator # ChangeMe to match the name in composer.json
+  PLUGIN: custom/plugins/CurrentPlugin
+
+  # Helper variables, and some used in tests.
+  ADMIN_DIR: $PLUGIN/src/Resources/app/administration
+  STORE_DIR: $PLUGIN/src/Resources/app/storefront
+
+  SW_ADMIN: $PROJECT_ROOT/src/Administration/Resources/app/administration
+  SW_STORE: $PROJECT_ROOT/src/Storefront/Resources/app/storefront/
+
+  INIT_CWD: $ADMIN_DIR
+  ADMIN_PATH: $SW_ADMIN
+
+  # Shopware setup
+  PROJECT_ROOT: $CI_PROJECT_DIR
+  WEB_DOCUMENT_ROOT: $CI_PROJECT_DIR/public
+  MYSQL_ROOT_PASSWORD: root
+  DATABASE_URL: 'mysql://root:root@database:3306/shopware'
+  APP_SECRET: 'devsecret'
+  APP_URL: http://localhost:8000
+  APP_DEBUG: 0
+  MYSQL_CMD: mysqld
+
+Test:
+  image: $DEV_IMAGE
+  stage: automated-test
+  resource_group: automated-jest
+  allow_failure: false
+
+  artifacts:
+    paths:
+      - $PROJECT_ROOT/jest_artifacts/administration.junit.xml
+      - $PROJECT_ROOT/jest_artifacts/storefront.junit.xml
+      - $PLUGIN/artifacts/phpunit.clover.xml
+    reports:
+      junit: [$PROJECT_ROOT/jest_artifacts/administration.junit.xml, $PROJECT_ROOT/jest_artifacts/storefront.junit.xml, $PLUGIN/artifacts/phpunit.junit.xml]
+
+  services:
+    -   name: $MYSQL_IMAGE
+        alias: database
+        entrypoint: [ "sh", "-c", "docker-entrypoint.sh $MYSQL_CMD" ]
+
+  # Store plugins should also test with php7.4, mysql5.7
+  parallel:
+    matrix:
+      -   PLATFORM_BRANCH: ["v6.4.16.0", "v6.4.15.1", "v6.4.14.0"]
+        #MYSQL_IMAGE: mariadb:10.4
+        #DEV_IMAGE: ["shopware/development:7.4-composer-2", "shopware/development:8.0-composer-2", "shopware/development:8.1-composer-2"]
+
+  only:
+    changes:
+      - "src/**/*.js"
+      - "src/**/*.php"
+      - "src/**/config/*.xml"
+
+
+  before_script:
+    - zip -rq plugin.zip .
+    - mv plugin.zip /tmp/plugin.zip
+    - rm -Rf .* * || true
+
+    - git clone --depth=1 --branch $PLATFORM_BRANCH https://github.com/shopware/platform.git .
+
+    - mkdir -p custom/plugins || true
+    - unzip -q /tmp/plugin.zip -d $PLUGIN
+
+    - echo -e "\e[0Ksection_start:`date +%s`:shopware_install[collapsed=true]\r\e[0KInstall shopware/administration and npm install"
+    - composer install --no-interaction
+    - mkdir -p config/jwt || true
+    - echo -e "\e[0Ksection_end:`date +%s`:shopware_install\r\e[0K"
+
+    # Generate JWT, setup
+    - echo -e "\e[0Ksection_start:`date +%s`:dbsetup[collapsed=true]\r\e[0KShopware:install & generate jwt"
+    - bin/console system:generate-jwt || true
+    - bin/console system:install --drop-database --basic-setup --force >/dev/null
+    - echo -e "\e[0Ksection_end:`date +%s`:dbsetup\r\e[0K"
+
+
+    - echo -e "\e[0Ksection_start:`date +%s`:pluginIns[collapsed=true]\r\e[0KPlugin install npm"
+    # Admin
+    - if [ -e $ADMIN_DIR/package.json ]; then npm --prefix $ADMIN_DIR clean-install; fi
+
+    # Store
+    - if [ -e $STORE_DIR/package.json ]; then npm --prefix $STORE_DIR clean-install; fi
+    - echo -e "\e[0Ksection_end:`date +%s`:pluginIns\r\e[0K"
+
+    # SW npm install
+    - echo -e "\e[0Ksection_start:`date +%s`:swBuild[collapsed=true]\r\e[0KShopware bin/build-js.sh"
+    - if [ -e "bin/build-js.sh" ]; then
+      bin/build-js.sh;
+      else
+      npm --prefix $ADMIN_PATH install --force;
+      
+      npm --prefix $SW_STORE install;
+      bin/console theme:compile;
+      bin/console assets:install;
+      fi
+
+    - echo -e "\e[0Ksection_end:`date +%s`:swBuild\r\e[0K"
+
+    # Plugin install
+    - echo -e "\e[0Ksection_start:`date +%s`:pluginInstall[collapsed=true]\r\e[0KInstall plugin"
+    - bin/console plugin:refresh
+    - bin/console plugin:install --activate $PLUGIN_NAME
+    - echo -e "\e[0Ksection_end:`date +%s`:pluginInstall\r\e[0K"
+
+    # run php as root to prevent permission issues
+    - SERVICE_PHPFPM_OPTS=--allow-to-run-as-root CONTAINER_UID=root /entrypoint supervisord > /dev/null 2>&1 &
+
+    # Create entity schema
+    - if [ -e "bin/console" ]; then
+      "bin/console" framework:schema --quiet --schema-format="entity-schema" "$SW_ADMIN/test/_mocks_/entity-schema.json";
+      fi
+
+  script:
+    - composer dump-autoload --dev -d $PLUGIN
+
+    # Admin jest
+    - if [ -e $ADMIN_DIR/package.json ]; then
+      echo -e "\e[0Ksection_start:`date +%s`:adminJest[collapsed=true]\r\e[0KRun admin jest";
+      npm --prefix=$ADMIN_DIR run unit;
+      echo -e "\e[0Ksection_end:`date +%s`:adminJest\r\e[0K";
+      fi
+
+    # Store::jest
+    - if [ -e $STORE_DIR/package.json ]; then
+      echo -e "\e[0Ksection_start:`date +%s`:storeJest[collapsed=true]\r\e[0KRun storefront jest";
+      npm --prefix=$STORE_DIR run unit;
+      echo -e "\e[0Ksection_end:`date +%s`:storeJest\r\e[0K";
+      fi
+
+    # PHPUnit
+    - if [ -e $PLUGIN/phpunit.xml.dist ]; then
+      php -d pcov.enabled=1 -d pcov.directory=$CI_PROJECT_DIR
+      vendor/bin/phpunit
+      --configuration $PLUGIN/phpunit.xml.dist
+      --log-junit $PLUGIN/artifacts/phpunit.junit.xml
+      --coverage-clover $PLUGIN/artifacts/phpunit.clover.xml
+      --coverage-html $PLUGIN/artifacts/phpunit-coverage-html
+      --colors=never
+      --coverage-text
+      $PLUGIN;
+      fi
+  after_script:
+    - php bin/console plugin:uninstall $PLUGIN_NAME
