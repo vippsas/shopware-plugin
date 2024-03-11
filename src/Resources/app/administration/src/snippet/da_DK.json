@@ -1,0 +1,17 @@
+{
+  "mobilepay-api-test-button": {
+    "title": "API Test",
+    "success": "Forbindelses test var en success",
+    "error": "Forbindelse kunne ikke oprettes. Check konfigurations data"
+  },
+  "vipps-mobilepay": {
+    "tabDetails": "Vipps MobilePay",
+    "capture": "Hæv",
+    "refund": "Refunder",
+    "cancel": "Annuller",
+    "info-box": {
+      "title": "Note:",
+      "information": "Reservationer med MobilePay vil blive annulleret efter 7 dage. Husk at få sendt og fuldført dine ordre."
+    }
+  }
+}

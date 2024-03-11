@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+
+        <!-- CONTROLLERS -->
+        <service id="Vipps\Mobilepay\Controller\Api\VippsMobilepayApiController">
+            <argument type="service" id="Vipps\Mobilepay\Service\VippsMobilepayService" />
+            <argument type="service" id="Vipps\Mobilepay\Service\PaymentService" />
+            <argument type="service" id="order.repository"/>
+            <argument type="service" id="Vipps\Mobilepay\Util\VippsMobilepayLogger" />
+            <argument type="service" id="Shopware\Core\Checkout\Order\Aggregate\OrderTransaction\OrderTransactionStateHandler"/>
+            <tag name="controller.service_arguments"/>
+        </service>
+
+        <!-- SERVICES -->
+        <service id="Vipps\Mobilepay\Service\VippsMobilepayService">
+            <argument type="service" id="Shopware\Core\System\SystemConfig\SystemConfigService" />
+            <argument type="service" id="language.repository"/>
+            <argument type="service" id="order.repository"/>
+            <argument type="service" id="sales_channel_domain.repository" />
+            <argument type="service" id="Shopware\Core\Checkout\Order\Aggregate\OrderTransaction\OrderTransactionStateHandler"/>
+            <argument type="service" id="Shopware\Core\System\StateMachine\StateMachineRegistry"/>
+            <argument type="service" id="Shopware\Core\Content\Seo\SeoUrlPlaceholderHandlerInterface" />
+            <argument type="service" id="Symfony\Component\EventDispatcher\EventDispatcherInterface" />
+            <argument type="service" id="Vipps\Mobilepay\Util\VippsMobilepayLogger" />
+            <argument type="service" id="translator" />
+        </service>
+
+        <service id="Vipps\Mobilepay\Service\PaymentService">
+            <argument type="service" id="Shopware\Core\Checkout\Order\Aggregate\OrderTransaction\OrderTransactionStateHandler"/>
+            <argument type="service" id="Shopware\Core\Content\Seo\SeoUrlPlaceholderHandlerInterface"/>
+            <argument type="service" id="Shopware\Core\Checkout\Cart\CartPersister"/>
+            <argument type="service" id="order.repository"/>
+            <argument type="service" id="Vipps\Mobilepay\Service\VippsMobilepayService"/>
+            <argument type="service" id="Vipps\Mobilepay\Util\ConfigHelper"/>
+            <argument type="service" id="Vipps\Mobilepay\Util\VippsMobilepayLogger" />
+            <tag name="shopware.payment.method.async" />
+        </service>
+
+        <service id="Vipps\Mobilepay\Service\Payments\MobilepayPayment"
+                 parent="Vipps\Mobilepay\Service\PaymentService">
+            <tag name="shopware.payment.method.async" />
+        </service>
+
+        <service id="Vipps\Mobilepay\Service\Payments\VippsPayment"
+                 parent="Vipps\Mobilepay\Service\PaymentService">
+            <tag name="shopware.payment.method.async" />
+        </service>
+
+        <!-- SUBSCRIBERS -->
+        <service id="Vipps\Mobilepay\Subscriber\OrderSubscriber">
+            <argument type="service" id="order_delivery.repository" />
+            <argument type="service" id="Vipps\Mobilepay\Service\PaymentService" />
+            <argument type="service" id="Shopware\Core\Checkout\Order\Aggregate\OrderTransaction\OrderTransactionStateHandler"/>
+            <tag name="kernel.event_subscriber" />
+        </service>
+
+        <!-- UTIL -->
+        <service id="Vipps\Mobilepay\Util\ConfigHelper">
+            <argument type="service" id="Shopware\Core\System\SystemConfig\SystemConfigService"/>
+        </service>
+
+        <service id="Vipps\Mobilepay\Util\VippsMobilepayLogger">
+            <argument type="service" id="log_entry.repository" />
+            <argument type="service" id="Vipps\Mobilepay\Util\ConfigHelper"/>
+        </service>
+
+    </services>
+</container>

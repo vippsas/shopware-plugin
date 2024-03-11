@@ -1,0 +1,5 @@
+#!/bin/sh
+
+docker() {
+    command docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.services.wexo.dk:4567
+}

@@ -1,0 +1,19 @@
+{
+  "mobilepay-api-test-button": {
+    "title": "API Test",
+    "success": "Anslutningen testades med framgång",
+    "error": "Det gick inte att upprätta anslutning. Kontrollera åtkomstdata"
+  },
+  "vipps-mobilepay": {
+    "tabDetails": "Vipps MobilePay",
+    "capture": "Fånga",
+    "partialCapture": "Delvis fångst",
+    "maxCapture": "Fånga MAX",
+    "refund": "Återbetalning",
+    "cancel": "Avbryt",
+    "info-box": {
+      "title": "Observera:",
+      "information": "Reservationer med MobilePay avbryts efter 7 dagar. Kom ihåg att skicka och fullfölja dina beställningar."
+    }
+  }
+}

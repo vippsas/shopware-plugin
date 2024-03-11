@@ -1,0 +1,21 @@
+$base-background-color: #E3F3FF;
+
+.info-box-container {
+  background: $base-background-color;
+  border-radius: 8px;
+  margin: 32px auto;
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 2px 1px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.08);
+
+  .content {
+    padding: 20px;
+
+    .info-box-title {
+      font-weight: 700;
+    }
+
+    .info-box {
+      font-weight: 400;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<div>
+    <sw-button-process
+            :isLoading="isLoading"
+            :processSuccess="isSaveSuccessful"
+            variant="primary"
+            @process-finish="saveFinish"
+            @click="testApi"
+    >{{ btnLabel }}</sw-button-process>
+</div>

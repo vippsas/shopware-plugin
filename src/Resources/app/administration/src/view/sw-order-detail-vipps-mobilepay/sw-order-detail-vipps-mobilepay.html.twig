@@ -1,0 +1,81 @@
+<sw-card title="Vipps MobilePay Status" :isLoading="isLoading" positionIdentifier="vippsMobilePay">
+    <sw-card-section v-if="transaction">
+        <sw-container columns="1fr" gap="5px">
+            <div class="lineInfo">
+                <div>PSP Reference ID:</div>
+                <div>{{ transaction.pspReference }}</div>
+            </div>
+            <div class="lineInfo">
+                <div>Reference ID:</div>
+                <div>{{ transaction.reference }}</div>
+            </div>
+            <div class="lineInfo">
+                <div>Transaction Status:</div>
+                <div>{{ transaction.state }}</div>
+            </div>
+            <div class="lineInfo">
+                <div>Authorized Amount:</div>
+                <div>{{ formatCurrency(transaction.aggregate.authorizedAmount.value, transaction.aggregate.authorizedAmount.currency) }}</div>
+            </div>
+            <div class="lineInfo">
+                <div>Captured Amount:</div>
+                <div>{{ formatCurrency(transaction.aggregate.capturedAmount.value, transaction.aggregate.capturedAmount.currency) }} </div>
+            </div>
+            <div class="lineInfo">
+                <div>Refunded Amount:</div>
+                <div>{{ formatCurrency(transaction.aggregate.refundedAmount.value, transaction.aggregate.refundedAmount.currency) }}</div>
+            </div>
+            <div class="lineInfo">
+                <div>Cancelled Amount:</div>
+                <div>{{ formatCurrency(transaction.aggregate.cancelledAmount.value, transaction.aggregate.cancelledAmount.currency) }}</div>
+            </div>
+            <div class="lineInfo">
+                <div>Total Amount:</div>
+                <div>{{ formatCurrency(transaction.amount.value, transaction.amount.currency) }}</div>
+            </div>
+        </sw-container>
+    </sw-card-section>
+    <sw-card-section v-if="transaction">
+        <sw-container columns="1fr 1fr 1fr" gap="10px">
+            <div class="btn-input-container">
+                <sw-button
+                        :disabled="isLoading || !['open', 'in_progress', 'authorized'].includes(order.transactions[0].stateMachineState.technicalName) && captureAvailable <= 0"
+                        @click="capture"
+                >
+                    {{ $tc("vipps-mobilepay.capture") }}
+                </sw-button>
+                    <sw-field
+                            type="number"
+                            v-model="captureAmount"
+                            :min="min"
+                            :max="captureAvailable"
+                            input-change="updateCaptureAmount()"
+                    >
+                    </sw-field>
+            </div>
+            <div class="btn-input-container">
+                <sw-button
+                        :disabled="isLoading || !['paid', 'paid_partially'].includes(order.transactions[0].stateMachineState.technicalName) && refundAvailable <= 0"
+                        @click="refund"
+                >
+                    {{ $tc("vipps-mobilepay.refund") }}
+                </sw-button>
+                <sw-field
+                        type="number"
+                        v-model="refundAmount"
+                        :min="min"
+                        :max="refundAvailable"
+                        input-change="updateRefundAmount()"
+                >
+                </sw-field>
+            </div>
+
+            <sw-button
+                    :disabled="isLoading || !['open', 'in_progress', 'authorized'].includes(order.transactions[0].stateMachineState.technicalName)"
+                    @click="cancel"
+            >
+                {{ $tc("vipps-mobilepay.cancel") }}
+            </sw-button>
+        </sw-container>
+    </sw-card-section>
+</sw-card>
