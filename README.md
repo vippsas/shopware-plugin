@@ -13,6 +13,10 @@ END_METADATA -->
 
 ![Support and development by Wexo ](./docs/images/wexo.svg#gh-light-mode-only)![Support and development by Wexo](./docs/images/wexo_dark.svg#gh-dark-mode-only)
 
+![Vipps](./docs/images/vipps.png) *Available for Vipps.*
+
+![MobilePay](./docs/images/mp.png) *Available for MobilePay.*
+
 
 *This plugin is built and maintained by [Wexo](https://www.wexo.dk/) and can be downloaded from ______________.*
 
@@ -47,7 +51,7 @@ For more details, see [Applying for services](https://developer.vippsmobilepay.c
 See [How to find the API keys](https://developer.vippsmobilepay.com/docs/developer-resources/portal#how-to-find-the-api-keys).
 
 ## Installation
-
+- [Installation](./docs/configure.md)
 
 ## How to get account keys from Merchant Portal
 
@@ -60,12 +64,14 @@ See:
 * [Logging in to the portal](https://developer.vippsmobilepay.com/docs/developer-resources/portal)
 * [How to find the API keys](https://developer.vippsmobilepay.com/docs/developer-resources/portal#how-to-find-the-api-keys)
 
+### In which countries can I use Vipps MobilePay?
+#### ![Vipps](./docs/images/vipps.png) Vipps
+    🇳🇴 Norway
+#### ![MobilePay](./docs/images/mp.png) MobilePay
+    🇩🇰 Denmark
+    🇫🇮 Finland
 
-## Frequently Asked Questions
-
-### In which countries can I use Vipps?
-
-You can only get paid by users who have Vipps. At the moment Vipps is only available in Norway.
+You can only get paid by users who have Vipps or MobilePay. At the moment Vipps is only available in Norway and MobilePay is available in Denmark and Finland.
 
 ### In which countries can I use MobilePay?
 
@@ -73,7 +79,7 @@ You can only get paid by users who have MobilePay. At the moment plugin is only 
 
 ### For how long is an order reserved?
 
-When a payment is completed with Vipps MobilePay, the money will be reserved, but only transferred to the merchant when the order is set to “Complete” or the money is captured manually. For MobilePay, this reservation period is 7 days, so you will need to ship and fulfill orders before this; or to make an agreement with the customer to capture the money before this period is over. For Vipps, the period is 180 days. For payments made by credit card in Vipps/MobilePay Checkout, the period can again be as short as 7 days.
+When a payment is completed with Vipps MobilePay, the money will be reserved, but only transferred to the merchant when the order is set to “Complete” or the money is captured manually. For MobilePay, this reservation period is 14 days, so you will need to ship and fulfill orders before this; or to make an agreement with the customer to capture the money before this period is over. For Vipps, the period is 180 days. For payments made by credit card in Vipps/MobilePay Checkout, the period can again be as short as 14 days.
 
 If the order only contains virtual and downloadable products, the plugin will capture the order automatically and set the order to “Completed” as is the standard WooCommerce rule.
 
@@ -89,3 +95,13 @@ See the
 for more help with Vipps MobilePay eCommerce.
 
 ## Requirements
+- Shopware: ```~6.5.0```
+
+## Documentation
+- [GitHub Repository](https://github.com/vippsas/shopware-plugin)
+- [Vipps MobilePay Developer Resources](https://developer.vippsmobilepay.com/)
+- [Vipps MobilePay ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/)
+- [Vipps MobilePay Knowledge base](https://developer.vippsmobilepay.com/docs/knowledge-base/)
+
+## Changelog
+[Changelog](CHANGELOG.md)
