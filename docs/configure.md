@@ -2,13 +2,15 @@
 ---
 title: Install and configure Shopware
 sidebar_label: Install and configure
-sidebar_position: 10
+description: Install and configure Shopware
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
 # Install and configure
+
+<!-- START_COMMENT -->
 - [Installation](#installation)
   - [Composer](#composer)
   - [Git](#git)
@@ -17,81 +19,104 @@ END_METADATA -->
   - [Configuration of plugin](#configuration-of-plugin)
   - [Configuration of payment method](#configuration-of-payment-method)
   - [Configuration of SalesChannel](#configuration-of-saleschannel)
+<!-- END_COMMENT -->
 
 ## Installation
+
 ### Composer
+
 ```bash
 Coming soon
 ```
- 
+
 ### GIT
+
 Start by navigating into `/var/www/<project-name>/custom/plugins/` then clone the repository with `SSH` or `HTTPS`
 
-```bash 
+```bash
 git clone git@github.com:vippsas/shopware-plugin.git VippsMobilePayEPayment
 ```
 
 ### Composer & Git installment of plugin
+
 Installing the plugin without using the shopware UI and activating the plugin
-```bash 
+
+```bash
 php bin/console plugin:install --activate VippsMobilepayEpayment
 ```
 
 After running the installation and activation of the plugin clear the cache.
-```bash 
+
+```bash
 php bin/console cache:clear
 ```
 
 The plugin is now installed and activated go to [configure](#configure)
 
 ### Shopware UI
-Download lastest [release](https://github.com/vippsas/shopware-plugin/releases/latest) 
 
-Go to My extensions and click Upload extension
-![upload extensions](./images/installation/upload_extension.png)
+Download the latest [release](https://github.com/vippsas/shopware-plugin/releases/latest)
 
-Upload the `*.zip` that you downloaded.
+Go to *My extensions* and click *Upload extension*.
 
-The plugin should now be available and shows up in the list 
-![plugin available](./images/installation/plugin_available.png)
+![Upload extensions](./images/installation/upload_extension.png)
 
-Click install and wait for the page to refresh when its done click the active slider
-![plugin activate](./images/installation/plugin_activate.png)
+Unzip the `*.zip` that you downloaded.
 
-And i should now be blue
-![plugin install and activated](./images/installation/plugin_installed_and_activated.png)
+The plugin should now be available and should show up in the list.
 
-The plugin is installed and activated now go to [configure](#configure)
+![Plugin available](./images/installation/plugin_available.png)
+
+Click *install* and wait for the page to refresh. When it's done click the active slider.
+
+![Plugin activate](./images/installation/plugin_activate.png)
+
+It should now be blue.
+
+![Plugin install and activated](./images/installation/plugin_installed_and_activated.png)
+
+The plugin is installed and activated now go to the [configure](#configure) section.
 
 ## Configure
 
 ### Configuration of plugin
-Start by clicking the 3 dots and the click "Configure" 
+
+Start by clicking the 3 dots and the click *Configure*.
+
 ![configure plugin](./images/installation/plugin_configure.png)
 
-Start by selecting the SalesChannel that match the [requirements](#requirements-for-saleschannel)
+Select the sales channel that matches the [requirements](#requirements-for-saleschannel).
 
 #### Parameters
-- API Endpoint - Vipps MobilePay API url choose "Test enviroment" or "Production enviroment".
+
+- API Endpoint - Vipps MobilePay API URL, choose "Test environment" or "Production environment".
 - Vipps MobilePay MSN - can be obtained through [portal.vippsmobilepay.com](https://portal.vippsmobilepay.com/).
-- Vipps MobilePay Client id - can be obtained through [portal.vippsmobilepay.com](https://portal.vippsmobilepay.com/).
+- Vipps MobilePay Client ID - can be obtained through [portal.vippsmobilepay.com](https://portal.vippsmobilepay.com/).
 - Vipps MobilePay Client secret - can be obtained through [portal.vippsmobilepay.com](https://portal.vippsmobilepay.com/).
 - Vipps MobilePay Primary subscription key - can be obtained through [portal.vippsmobilepay.com](https://portal.vippsmobilepay.com/).
 - Vipps MobilePay Secondary subscription key - can be obtained through [portal.vippsmobilepay.com](https://portal.vippsmobilepay.com/).
 
-![plugin config exampel](./images/installation/plugin_temp_config.png)
+![Plugin config example](./images/installation/plugin_temp_config.png)
 
-**REMEBER** only use "production environment" for production keys else use "test environment". 
+**REMEMBER** only use "production environment" for production keys, otherwise use "test environment".
 
-To test if the right credentials press the "Test API Connection" if there is no error then the right credentials entered. if there comes an error then double check the credentials to see if they are correct.
+To test if the right credentials are used, press the *Test API Connection*.
+If there is no error, then the credentials are correct.
+If there comes an error, then double-check the credentials to see if they're correct.
 
 ### Configuration of payment method
-Start by going to `https://<domain>/admin#/sw/settings/payment/overview` and see the payments are correct installed
-![payment method installed](./images/installation/plugin_payment_method_installed.png)
+
+Start by going to `https://<domain>/admin#/sw/settings/payment/overview` to see that the payments are correctly installed.
+
+![Payment method installed](./images/installation/plugin_payment_method_installed.png)
 
 
 ### Configuration of SalesChannel
-Go to the SalesChannel where you want to add Vipps or MobilePay its **important** that the SalesChannel is configured the right way. See example [here](./images/installation/exampel_of_saleschannel.png)
+
+Go to the SalesChannel where you want to add Vipps or MobilePay.
+It's **important** that the SalesChannel is configured the right way. For example:
+
+![SalesChannels](./images/installation/exampel_of_saleschannel.png)
 
 #### Requirements for SalesChannel
 
