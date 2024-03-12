@@ -2,7 +2,8 @@
 ---
 title: Adjust payments
 sidebar_label: Adjust payments
-sidebar_position: 10
+sidebar_position: 20
+description: How to adjust payments with the Shopware Payments plugin
 pagination_next: null
 pagination_prev: null
 ---

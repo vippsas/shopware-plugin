@@ -2,7 +2,8 @@
 ---
 title: Enhanced logging
 sidebar_label: Enhanced logging
-description: Enable enhanced logging.
+sidebar_position: 30
+description: How to Enable enhanced logging for the Shopware Payments plugin
 pagination_next: null
 pagination_prev: null
 ---
