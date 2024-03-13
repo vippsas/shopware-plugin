@@ -11,7 +11,7 @@
     "cancel": "Annuller",
     "info-box": {
       "title": "Note:",
-      "information": "Reservationer med MobilePay vil blive annulleret efter 7 dage. Husk at få sendt og fuldført dine ordre."
+      "information": "Reservationer med MobilePay vil blive annulleret efter 14 dage. Husk at få sendt og fuldført dine ordre."
     }
   }
 }

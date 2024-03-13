@@ -13,7 +13,7 @@
     "cancel": "Cancel",
     "info-box": {
       "title": "Note:",
-      "information": "Reservations with MobilePay will be cancelled after 7 days. Remember to ship and fulfill your orders."
+      "information": "Reservations with MobilePay will be cancelled after 14 days. Remember to ship and fulfill your orders."
     }
   }
 }

@@ -5,18 +5,12 @@ sidebar_position: 1
 description: Provide Vipps and MobilePay payments for Shopware.
 pagination_next: null
 pagination_prev: null
-draft: true
 ---
 END_METADATA -->
 
 # Vipps/MobilePay plugin for Shopware
 
-![Support and development by Wexo ](./docs/images/wexo.svg#gh-light-mode-only)![Support and development by Wexo](./docs/images/wexo_dark.svg#gh-dark-mode-only)
-
-![Vipps](./docs/images/vipps.png) *Available for Vipps.*
-
-![MobilePay](./docs/images/mp.png) *Available for MobilePay.*
-
+![Support and development by WEXO ](./docs/images/wexo.svg#gh-light-mode-only)![Support and development by WEXO](./docs/images/wexo_dark.svg#gh-dark-mode-only)
 
 *This plugin is built and maintained by [WEXO](https://www.wexo.dk/) and is hosted on [GitHub](https://github.com/vippsas/shopware-plugin).*
 
@@ -28,11 +22,13 @@ END_METADATA -->
 
 *Branded locally as MobilePay in Denmark and Finland, and as Vipps in Norway. One platform gathering more than 11 million users and more than 400,000 merchants across the Nordics. Give your users an easy, fast and familiar shopping experience.*
 
-## Table of content
+<!-- START_COMMENT -->
+## Table of contents
+
 - [Description](#description)
 - [Single Payments](#single-payments)
 - [How to get started](#how-to-get-started)
-- [Installation](#Installation)
+- [Installation](#installation)
 - [How to get account keys from the merchant portal](#how-to-get-account-keys-from-merchant-portal)
   - [In which countries can I use Vipps MobilePay?](#in-which-countries-can-i-use-vipps-mobilepay)
   - [In which countries can I use MobilePay?](#in-which-countries-can-i-use-mobilepay)
@@ -44,8 +40,11 @@ END_METADATA -->
   - [General documentation](#general-documentation)
   - [Plugin documentation](#plugin-documentation)
 - [Changelog](#changelog)
+<!-- END_COMMENT -->
+
 ## Description
-🌟 Integrated Vipps and MobilePay: With the ePayments plugin, you can seamlessly offer Vipps and MobilePay as payment options, making transactions smoother for your customers.
+
+🌟 Integrated Vipps and MobilePay: With the Payment plugin, you can seamlessly offer Vipps and MobilePay as payment options, making transactions smoother for your customers.
 
 📱 Automatic Phone Number Transfer: No more manual entries. When customers provide their phone numbers, they're smoothly transferred to their Vipps or MobilePay app, streamlining the checkout process.
 
@@ -68,6 +67,7 @@ When you enable this plugin, your customers will be able to choose Vipps or Mobi
 For more details, see [Applying for services](https://developer.vippsmobilepay.com/docs/knowledge-base/applying-for-services/).
 
 ## Installation
+
 - [Installation](./docs/configure.md)
 
 ## How to get account keys from Merchant Portal
@@ -78,13 +78,17 @@ For more details, see [Applying for services](https://developer.vippsmobilepay.c
 
 See:
 
-* [Logging in to the portal](https://developer.vippsmobilepay.com/docs/developer-resources/portal)
-* [How to find the API keys](https://developer.vippsmobilepay.com/docs/developer-resources/portal#how-to-find-the-api-keys)
+- [Logging in to the portal](https://developer.vippsmobilepay.com/docs/developer-resources/portal)
+- [How to find the API keys](https://developer.vippsmobilepay.com/docs/developer-resources/portal#how-to-find-the-api-keys)
 
 ### In which countries can I use Vipps MobilePay?
+
 #### ![Vipps](./docs/images/vipps.png) Vipps
+
     🇳🇴 Norway
+
 #### ![MobilePay](./docs/images/mp.png) MobilePay
+
     🇩🇰 Denmark
     🇫🇮 Finland
 
@@ -96,14 +100,13 @@ You can only get paid by users who have MobilePay. At the moment plugin is only 
 
 ### For how long is an order reserved?
 
-When a payment is completed with Vipps MobilePay, the money will be reserved, but only transferred to the merchant when the order is set to “Complete” or the money is captured manually. For MobilePay, this reservation period is 14 days, so you will need to ship and fulfill orders before this; or to make an agreement with the customer to capture the money before this period is over. For Vipps, the period is 180 days. For payments made by credit card in Vipps/MobilePay Checkout, the period can again be as short as 14 days.
+When a payment is completed with Vipps MobilePay, the money will be reserved, but only transferred to the merchant when the order is set to *Complete* or the money is captured manually. For MobilePay, this reservation period is 14 days, so you will need to ship and fulfill orders before this; or to make an agreement with the customer to capture the money before this period is over. For Vipps, the period is 180 days. For payments made by credit card in Vipps/MobilePay Checkout, the period can again be as short as 14 days.
 
-If the order only contains virtual and downloadable products, its possible to setup a rule in Shopware where you can change the shipment status to "shipped" witch will capture the authorized amount. See how the Shopware rule builder works [here](https://docs.shopware.com/en/shopware-6-en/settings/rules)
+If the order only contains virtual and downloadable products, it's possible to set up a rule in Shopware where you can change the shipment status to *shipped which will capture the authorized amount. See how the Shopware rule builder works on the [Shopware rule builder page](https://docs.shopware.com/en/shopware-6-en/settings/rules)
 
 ## How can I get help if I have any issues?
 
 For issues with your Vipps/MobilePay plugin for Shopware installation, [contact WEXO](https://www.wexo.dk/kontakt). For other issues, contact [Vipps MobilePay](https://developer.vippsmobilepay.com/docs/contact/).
-
 
 ### General FAQs
 
@@ -112,17 +115,23 @@ See the
 for more help with Vipps MobilePay eCommerce.
 
 ## Requirements
+
 - Shopware: ```~6.5.0```
 
 ## Documentation
+
 ### General documentation
+
 - [GitHub Repository](https://github.com/vippsas/shopware-plugin)
 - [Vipps MobilePay Developer Resources](https://developer.vippsmobilepay.com/)
 - [Vipps MobilePay ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/)
 - [Vipps MobilePay Knowledge base](https://developer.vippsmobilepay.com/docs/knowledge-base/)
+
 ### Plugin documentation
+
 - [Vipps MobilePay ePayment enhanced logging](./docs/enhanced_logging.md)
 - [Vipps MobilePay ePayment adjust payments](./docs/adjust_payments.md)
 
 ## Changelog
-Read the Changelog [here](CHANGELOG.md)
+
+Read the [Changelog](CHANGELOG.md)
