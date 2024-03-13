@@ -44,7 +44,7 @@ END_METADATA -->
 
 ## Description
 
-🌟 Integrated Vipps and MobilePay: With the ePayments plugin, you can seamlessly offer Vipps and MobilePay as payment options, making transactions smoother for your customers.
+🌟 Integrated Vipps and MobilePay: With the Payment plugin, you can seamlessly offer Vipps and MobilePay as payment options, making transactions smoother for your customers.
 
 📱 Automatic Phone Number Transfer: No more manual entries. When customers provide their phone numbers, they're smoothly transferred to their Vipps or MobilePay app, streamlining the checkout process.
 

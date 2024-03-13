@@ -19,7 +19,7 @@ END_METADATA -->
 - [Configure](#configure)
   - [Configuration of plugin](#configuration-of-plugin)
   - [Configuration of payment method](#configuration-of-payment-method)
-  - [Configuration of SalesChannel](#configuration-of-saleschannel)
+  - [Configuration of the sales channel](#configuration-of-the-sales-channel)
 <!-- END_COMMENT -->
 
 ## Installation
@@ -40,7 +40,7 @@ git clone git@github.com:vippsas/shopware-plugin.git VippsMobilePayEPayment
 
 ### Composer & Git installment of plugin
 
-Installing the plugin without using the shopware UI and activating the plugin
+Installing the plugin without using the Shopware UI and activating the plugin
 
 ```bash
 php bin/console plugin:install --activate VippsMobilepayEpayment
@@ -84,9 +84,9 @@ The plugin is installed and activated now go to the [configure](#configure) sect
 
 Start by clicking the 3 dots and the click *Configure*.
 
-![configure plugin](./images/installation/plugin_configure.png)
+![Configure plugin](./images/installation/plugin_configure.png)
 
-Select the sales channel that matches the [requirements](#requirements-for-saleschannel).
+Select the sales channel that matches the [requirements](#requirements-for-the-sales-channel).
 
 #### Parameters
 
@@ -111,15 +111,14 @@ Start by going to `https://<domain>/admin#/sw/settings/payment/overview` to see 
 
 ![Payment method installed](./images/installation/plugin_payment_method_installed.png)
 
+### Configuration of the sales channel
 
-### Configuration of SalesChannel
+Go to the sales channel where you want to add Vipps or MobilePay.
+It's **important** that the sales channel is configured the right way. For example:
 
-Go to the SalesChannel where you want to add Vipps or MobilePay.
-It's **important** that the SalesChannel is configured the right way. For example:
+![Sales channels](./images/installation/exampel_of_saleschannel.png)
 
-![SalesChannels](./images/installation/exampel_of_saleschannel.png)
-
-#### Requirements for SalesChannel
+#### Requirements for the sales channel
 
 | Merchant     | Countries    | Default Country | Languages | Default Languages | Currencies       | Default Currencies | Payment Methods                       |  Test environment  |  Production environment  |
 |--------------|--------------|-----------------|-----------|-------------------|------------------|--------------------|---------------------------------------|:------------------:|:------------------------:|
