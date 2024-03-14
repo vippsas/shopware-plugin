@@ -120,8 +120,8 @@ It's **important** that the sales channel is configured the right way. For examp
 
 #### Requirements for the sales channel
 
-| Merchant     | Countries    | Default Country | Languages | Default Languages | Currencies       | Default Currencies | Payment Methods                       |  Test environment  |  Production environment  |
-|--------------|--------------|-----------------|-----------|-------------------|------------------|--------------------|---------------------------------------|:------------------:|:------------------------:|
-| Vipps        | 🇳🇴 Norway    | Norway          | Norsk     | Norsk             | Norwegian krone  | Norwegian krone    | Vipps \| Vipps MobilePay \| ePayment  |         ✅          |            ✅             |
-| MobilePay DA | 🇩🇰 Denmark   | Denmark         | Danish    | Danish            | Danish krone     | Danish krone       | MobilePay \| Vipps MobilePay \| ePayment |         ❌          |            ✅             |
-| MobilePay FI | 🇫🇮 Finland   | Finland         | Suomi     | Suomi             | Finnish krone    | Finnish krone      | MobilePay \| Vipps MobilePay \| ePayment |         ❌          |            ✅             |
+| Merchant     | Countries    | Default Country | Languages | Default Languages | Currencies      | Default Currencies | Payment Methods                       |  Test environment  |  Production environment  |
+|--------------|--------------|-----------------|-----------|-------------------|-----------------|--------------------|---------------------------------------|:------------------:|:------------------------:|
+| Vipps        | 🇳🇴 Norway    | Norway          | Norsk     | Norsk             | Norwegian krone | Norwegian krone    | Vipps \| Vipps MobilePay \| ePayment  |         ✅          |            ✅             |
+| MobilePay DA | 🇩🇰 Denmark   | Denmark         | Danish    | Danish            | Danish krone    | Danish krone       | MobilePay \| Vipps MobilePay \| ePayment |         ❌          |            ✅             |
+| MobilePay FI | 🇫🇮 Finland   | Finland         | Suomi     | Suomi             | Euro            | Euro               | MobilePay \| Vipps MobilePay \| ePayment |         ❌          |            ✅             |
