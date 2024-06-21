@@ -12,9 +12,7 @@ END_METADATA -->
 
 ![Support and development by WEXO ](./docs/images/wexo.svg#gh-light-mode-only)![Support and development by WEXO](./docs/images/wexo_dark.svg#gh-dark-mode-only)
 
-![Vipps](./docs/images/vipps.png) *Available for Vipps in Norway.*
-
-![MobilePay](./docs/images/mp.png) *Available for MobilePay in Finland and Denmark.*
+![Vipps](./docs/images/vipps.png) ![MobilePay](./docs/images/mp.png) *Available for Vipps and MobilePay.*
 
 *This plugin is built and maintained by [WEXO](https://www.wexo.dk/) and is hosted on [GitHub](https://github.com/vippsas/shopware-plugin).*
 
