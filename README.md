@@ -107,6 +107,17 @@ You can only get paid by users who have MobilePay in Finland and Denmark.
 
 ### For how long is an order reserved?
 
+
+:::note
+Payments initiated in Finland and Denmark have only 14 days to be captured; while
+payments in Norway have 180 days.
+If the payments aren't captured within this time, they will be automatically cancelled.
+
+Payments can only be captured up to 14 days (MobilePay) or 180 days (Vipps) after reservation.
+See [Reserve and capture](https://developer.vippsmobilepay.com/docs/knowledge-base/reserve-and-capture/).
+:::
+
+
 When a payment is completed with Vipps MobilePay, the money will be reserved, but only transferred to the merchant when the order is set to *Complete* or the money is captured manually. For MobilePay, this reservation period is 14 days, so you will need to ship and fulfill orders before this; or to make an agreement with the customer to capture the money before this period is over. For Vipps, the period is 180 days. For payments made by credit card in Vipps/MobilePay Checkout, the period can again be as short as 14 days.
 
 If the order only contains virtual and downloadable products, it's possible to set up a rule in Shopware where you can change the shipment status to *shipped which will capture the authorized amount. See how the Shopware rule builder works on the [Shopware rule builder page](https://docs.shopware.com/en/shopware-6-en/settings/rules)
