@@ -46,12 +46,12 @@
             "sv-SE": "https://vippsmobilepay.com/"
         },
         "supportLink": {
-            "da-DK": "https://vippsmobilepay.com/help",
-            "en-GB": "https://vippsmobilepay.com/help",
-            "de-DE": "https://vippsmobilepay.com/help",
-            "fi-FI": "https://vippsmobilepay.com/help",
-            "nb-NO": "https://vippsmobilepay.com/help",
-            "sv-SE": "https://vippsmobilepay.com/help"
+            "da-DK": "https://vippsmobilepay.com/info/help",
+            "en-GB": "https://vippsmobilepay.com/info/help",
+            "de-DE": "https://vippsmobilepay.com/info/help",
+            "fi-FI": "https://vippsmobilepay.com/info/help",
+            "nb-NO": "https://vippsmobilepay.com/info/help",
+            "sv-SE": "https://vippsmobilepay.com/info/help"
         }
     }
 }
