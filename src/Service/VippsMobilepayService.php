@@ -116,7 +116,7 @@ class VippsMobilepayService
                         'totalAmount' => $total,
                         'totalAmountExcludingTax' => $totalExclTax,
                         'totalTaxAmount' => $taxAmount,
-                        'taxPercentage' => $taxRate,
+                        'taxRate' => (int)$taxRate,
                         'unitInfo' => [
                             'unitPrice' => round($item->getPrice()->getUnitPrice() * 100, 0),
                             'quantity' => (string)$item->getQuantity(),
