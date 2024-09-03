@@ -92,7 +92,10 @@ See:
     🇩🇰 Denmark
     🇫🇮 Finland
 
-You can only get paid by users who have Vipps or MobilePay. At the moment Vipps is only available in Norway and MobilePay is available in Denmark and Finland.
+You can only get paid by users who have Vipps or MobilePay. Vipps is available in Norway and MobilePay is available in Denmark and Finland.
+
+To learn more, see
+[Using Vipps MobilePay across borders](https://developer.vippsmobilepay.com/docs/knowledge-base/across-borders/).
 
 ### In which countries can I use MobilePay?
 
