@@ -78,16 +78,16 @@ For more details, see [Applying for services](https://developer.vippsmobilepay.c
 
 See:
 
-- [Logging in to the portal](https://developer.vippsmobilepay.com/docs/developer-resources/portal)
-- [How to find the API keys](https://developer.vippsmobilepay.com/docs/developer-resources/portal#how-to-find-the-api-keys)
+- [Logging in to the portal](https://developer.vippsmobilepay.com/docs/knowledge-base/portal/)
+- [How to find the API keys](https://developer.vippsmobilepay.com/docs/knowledge-base/portal/#how-to-find-the-api-keys)
 
 ### In which countries can I use Vipps MobilePay?
 
-#### ![Vipps](./docs/images/vipps.png) Vipps
+#### ![Vipps icon](./docs/images/vipps.png) Vipps
 
     🇳🇴 Norway
 
-#### ![MobilePay](./docs/images/mp.png) MobilePay
+#### ![MobilePay icon](./docs/images/mp.png) MobilePay
 
     🇩🇰 Denmark
     🇫🇮 Finland
@@ -96,7 +96,8 @@ You can only get paid by users who have Vipps or MobilePay. At the moment Vipps 
 
 ### In which countries can I use MobilePay?
 
-You can only get paid by users who have MobilePay in Finland and Denmark. [Read More](https://developer.vippsmobilepay.com/docs/plugins-ext/shopware/#in-which-countries-can-i-use-mobilepay:~:text=You%20can%20only%20get%20paid%20by%20users%20who%20have%20MobilePay.%20At%20the%20moment%20plugin%20is%20only%20supporting%20MobilePay%20users%20in%20Finland.%20Support%20for%20MobilePay%20in%20Denmark%20coming%20later%20in%20Q1%202024.)
+You can only get paid by users who have MobilePay in Finland and Denmark.
+
 
 ### For how long is an order reserved?
 
