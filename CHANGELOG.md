@@ -24,6 +24,9 @@ For example:
 - Version [1.1.0] signifies a minor release with added features.
 - Version [1.1.1] is a patch release with bug fixes.
 
+## [1.0.2]
+
+Deprecated orderLines.taxPercentage in favor of orderLines.taxRate
 
 ## [1.0.1]
 

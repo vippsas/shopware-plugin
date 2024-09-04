@@ -31,7 +31,7 @@ class VippsMobilepayLogger
         string $event,
         array  $context,
         ?string $salesChannelId = null,
-        ?int   $level = Level::Error->value,
+        int|Level|null $level = Level::Error,
     ): void {
         $debug = $this->configHelper->getDebug($salesChannelId);
         if (!$debug && $level !== Level::Error->value) {

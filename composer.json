@@ -3,7 +3,7 @@
     "description": "Shopware 6 module for accepting Vipps MobilePay payments",
     "type": "shopware-platform-plugin",
     "license": "proprietary",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "authors": [
         {
             "name": "Vipps MobilePay"

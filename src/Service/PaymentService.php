@@ -376,7 +376,8 @@ class PaymentService implements AsynchronousPaymentHandlerInterface
                 $order->getBillingAddress()->getCountry()->getIso()
             ),
             $order->getCurrency()->getIsoCode(),
-            $salesChannelContext->getSalesChannel()->getName()
+            $salesChannelContext->getSalesChannel()->getTranslation('name')
+                ?? $salesChannelContext->getSalesChannel()->getName()
         );
         $paymentEndpoint = $apiUrl . '/epayment/v1/payments';
         $response = $client->post($paymentEndpoint, ['json' => $payload]);

@@ -97,6 +97,8 @@ class VippsMobilepayService
             $taxRate = $totalExclTax > 0 ?
                 round(($total / $totalExclTax - 1) * 100) :
                 0;
+            $taxRate = round($taxRate, 2);
+            $taxRate = $taxRate * 100;
             switch ($item->getType()) {
                 case LineItem::PRODUCT_LINE_ITEM_TYPE:
                     $url = $this->seoUrlPlaceholderHandler->generate(
@@ -114,7 +116,7 @@ class VippsMobilepayService
                         'totalAmount' => $total,
                         'totalAmountExcludingTax' => $totalExclTax,
                         'totalTaxAmount' => $taxAmount,
-                        'taxPercentage' => (int)$taxRate,
+                        'taxRate' => (int)$taxRate,
                         'unitInfo' => [
                             'unitPrice' => round($item->getPrice()->getUnitPrice() * 100, 0),
                             'quantity' => (string)$item->getQuantity(),
