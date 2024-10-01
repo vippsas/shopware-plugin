@@ -12,7 +12,8 @@ END_METADATA -->
 
 ![Support and development by WEXO ](./docs/images/wexo.svg#gh-light-mode-only)![Support and development by WEXO](./docs/images/wexo_dark.svg#gh-dark-mode-only)
 
-*This plugin is built and maintained by [WEXO](https://www.wexo.dk/) and is hosted on [GitHub](https://github.com/vippsas/shopware-plugin).*
+*This plugin is built and maintained by [WEXO](https://www.wexo.dk/) and is hosted on [GitHub](https://github.com/vippsas/shopware-plugin).
+For support, contact [WEXO](https://www.wexo.dk/kontakt).*
 
 <!-- START_COMMENT -->
 💥 Please use the plugin pages on [https://developer.vippsmobilepay.com](https://developer.vippsmobilepay.com/docs/plugins-ext/shopware-plugin/). 💥
@@ -138,4 +139,9 @@ for more help with Vipps MobilePay eCommerce.
 
 ## Changelog
 
-Read the [Changelog](CHANGELOG.md)
+See [Changelog](CHANGELOG.md).
+
+## Support
+
+For issues with the plugin,
+contact [WEXO](https://www.wexo.dk/kontakt).
