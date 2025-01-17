@@ -84,11 +84,11 @@ See:
 
 ### In which countries can I use Vipps MobilePay?
 
-#### ![null](./docs/images/vipps.png) Vipps
+#### ![Vipps icon](./docs/images/vipps.png) Vipps
 
     🇳🇴 Norway
 
-#### ![null](./docs/images/mp.png) MobilePay
+#### ![MobilePay icon](./docs/images/mp.png) MobilePay
 
     🇩🇰 Denmark
     🇫🇮 Finland
