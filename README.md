@@ -62,7 +62,7 @@ When you enable this plugin, your customers will be able to choose Vipps or Mobi
 ## How to get started
 
 - Sign up to use [*Payment Integration*](https://vippsmobilepay.com/online/payment-integration).
-- After 1-2 days, you will get an email with login details to the Merchant Portal, [portal.vippsmobilepay.com](https://portal.vippsmobilepay.com/), where you can get the API credentials.
+- After 1–2 days, you will get an email with login details to the Merchant Portal, [portal.vippsmobilepay.com](https://portal.vippsmobilepay.com/), where you can get the API credentials.
 - Download and configure.
 
 For more details, see [Applying for services](https://developer.vippsmobilepay.com/docs/knowledge-base/applying-for-services/).
@@ -102,12 +102,11 @@ To learn more, see
 
 You can only get paid by users who have MobilePay in Finland and Denmark.
 
-
 ### For how long is an order reserved?
 
-When a payment is completed with Vipps MobilePay, the money will be reserved, but only transferred to the merchant when the order is set to *Complete* or the money is captured manually. For MobilePay, this reservation period is 14 days, so you will need to ship and fulfill orders before this; or to make an agreement with the customer to capture the money before this period is over. For Vipps, the period is 180 days. For payments made by credit card in Vipps/MobilePay Checkout, the period can again be as short as 14 days.
+When a payment is completed with Vipps MobilePay, the money will be reserved, but only transferred to the merchant when the order is set to *Complete* or the money is captured manually. For MobilePay, this reservation period is 14 days, so you will need to ship and fulfill orders before this; or to make an agreement with the customer to capture the money before this period is over. For Vipps, the period is 180 days. Payments made by credit card in Vipps/MobilePay Checkout can have a reservation period as short as 14 days.
 
-If the order only contains virtual and downloadable products, it's possible to set up a rule in Shopware where you can change the shipment status to *shipped* which will capture the authorized amount. See how the Shopware rule builder works on the [Shopware rule builder page](https://docs.shopware.com/en/shopware-6-en/settings/rules)
+If the order only contains virtual and downloadable products, it's possible to set up a rule in Shopware where you can change the shipment status to *shipped* which will capture the authorized amount. See how the Shopware rule builder works on the [Shopware rule builder page](https://docs.shopware.com/en/shopware-6-en/settings/rules).
 
 ## How can I get help if I have any issues?
 
@@ -117,7 +116,7 @@ For issues with your Vipps/MobilePay plugin for Shopware installation, [contact 
 
 See the
 [Knowledge base](https://developer.vippsmobilepay.com/docs/knowledge-base/)
-for more help with Vipps MobilePay eCommerce.
+for more help with Vipps MobilePay ecommerce.
 
 ## Requirements
 
