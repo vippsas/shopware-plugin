@@ -41,7 +41,7 @@ where we check the state of the payment
 
 ### Expired
 
-*Not supported*
+Not supported.
 
 ### Authorized
 
@@ -49,7 +49,7 @@ where we check the state of the payment
 
 ### Terminated
 
-*Not supported*
+Not supported.
 
 ## Vipps MobilePay Status
 
