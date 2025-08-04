@@ -27,7 +27,7 @@ For support, contact [WEXO](https://www.wexo.dk/kontakt).*
 ## Table of contents
 
 - [Description](#description)
-- [Single Payments](#single-payments)
+- [Single payments](#single-payments)
 - [How to get started](#how-to-get-started)
 - [Installation](#installation)
 - [How to get account keys from the merchant portal](#how-to-get-account-keys-from-merchant-portal)
@@ -55,7 +55,7 @@ For support, contact [WEXO](https://www.wexo.dk/kontakt).*
 
 📊 Live Order Tracking: Keep tabs on your orders in real-time. With a dedicated tab, you can track each order's status directly from Vipps and MobilePay.
 
-## Single Payments
+## Single payments
 
 When you enable this plugin, your customers will be able to choose Vipps or MobilePay as a payment method directly in the checkout. There is no need to go via a third-party payment method. When choosing Vipps/MobilePay, user fills in name and address and is then asked to enter phone number in the Vipps/MobilePay landing page. User confirms the payment in the Vipps or MobilePay app.
 

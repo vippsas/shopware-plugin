@@ -13,9 +13,9 @@ END_METADATA -->
 
 <!-- START_COMMENT -->
 - [Order detail](#order-detail)
-- [Vipps MobilePay Status](#vipps-mobilepay-status)
+- [Vipps MobilePay status](#vipps-mobilepay-status)
   - [Actions](#actions)
-- [Delivery Status](#delivery-status)
+- [Delivery status](#delivery-status)
 <!-- END_COMMENT -->
 
 ## Order detail
@@ -51,7 +51,7 @@ Not supported.
 
 Not supported.
 
-## Vipps MobilePay Status
+## Vipps MobilePay status
 
 Here, it's possible to see the status of an order; as well as the following:
 
@@ -68,13 +68,13 @@ Here, it's possible to see the status of an order; as well as the following:
 
 ### Actions
 
-It's possible to perform actions  direct from Shopware administration on an order where there is paid with Vipps MobilePay
+It's possible to perform actions direct from Shopware administration on an order where there is paid with Vipps MobilePay.
 
 #### Capture
 
 By default, if you click `Capture`, it will capture the full authorized amount and change the Payment Status to `Paid`.
 
-#### Partial Capture
+#### Partial capture
 
 If you change the amount to capture and click `Capture`, it will capture the amount you have entered.
 The max you can capture is the Authorized amount. It will change the Payment Status to `Partial paid`.
@@ -83,28 +83,28 @@ The max you can capture is the Authorized amount. It will change the Payment Sta
 
 If you want to refund the full amount of the captured amount, then just click `Refund`. It will refund the full amount and change the Payment Status to `Refunded`.
 
-#### Partial Refund
+#### Partial refund
 
-If you want to refund a part of the captured amount, then you just change the amount you want to and the click `Refund`. It will change the Payment Status to `Partial refunded`
+If you want to refund a part of the captured amount, then you just change the amount you want to and the click `Refund`. It will change the Payment Status to `Partial refunded`.
 
 #### Cancel
 
-If you want to cancel an order, make sure there is nothing captured or refunded, and then you can just click `Cancel`. It will change the Payment status to `Cancelled`
+If you want to cancel an order, make sure there is nothing captured or refunded, and then you can just click `Cancel`. It will change the Payment status to `Cancelled`.
 
-## Delivery Status
+## Delivery status
 
-We are listing to Delivery status
+We are listing to *delivery status*.
 
 ### Shipped
 
-When an order's Delivery status changes to `Shipped`, the full amount will be captured.
+When an order's delivery status changes to `Shipped`, the full amount will be captured.
 
 ![Vipps MobilePay delivery status shipped](./images/adjust_payments/plugin_shipped.png)
 ![Vipps MobilePay delivery Vipps MobilePay shipped status](./images/adjust_payments/plugin_shipped_status.png)
 
 ### Returned
 
-When an order's Delivery status changes to `Returned`, the full amount will be refunded
+When an order's delivery status changes to `Returned`, the full amount will be refunded.
 
 ![Vipps MobilePay delivery status returned](./images/adjust_payments/plugin_returned.png)
 ![Vipps MobilePay delivery Vipps MobilePay returned status](./images/adjust_payments/plugin_returned_status.png)
