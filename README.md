@@ -12,7 +12,7 @@ END_METADATA -->
 
 ![Support and development by WEXO ](./docs/images/wexo.svg#gh-light-mode-only)![Support and development by WEXO](./docs/images/wexo_dark.svg#gh-dark-mode-only)
 
-*This plugin is built and maintained by [WEXO](https://www.wexo.dk/) and is hosted on [GitHub](https://github.com/vippsas/shopware-plugin).
+*This plugin is built and maintained by [WEXO](https://www.wexo.dk/) and is hosted on [GitHub](https://github.com/vippsas/shopware-plugin/releases).
 For support, contact [WEXO](https://www.wexo.dk/kontakt).*
 
 <!-- START_COMMENT -->
@@ -22,6 +22,13 @@ For support, contact [WEXO](https://www.wexo.dk/kontakt).*
 *Official Vipps/MobilePay payment plugin for Shopware.*
 
 *Branded locally as MobilePay in Denmark and Finland, and as Vipps in Norway. One platform gathering more than 11 million users and more than 400,000 merchants across the Nordics. Give your users an easy, fast and familiar shopping experience.*
+
+<div className="text-center my-8"><a
+href="https://github.com/vippsas/shopware-plugin/releases"
+target="_blank"
+rel="noopener noreferrer"
+className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold text-base px-6  py-6 rounded-lg no-underline shadow-md transition-colors duration-200"
+><span aria-hidden="true">📱</span> Download from GitHub</a></div>
 
 <!-- START_COMMENT -->
 ## Table of contents
