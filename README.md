@@ -1,8 +1,3 @@
----
-# Facet metadata
-section: Plugins
----
-
 <!-- START_METADATA
 ---
 title: "Vipps/MobilePay for Shopware plugin"
@@ -10,6 +5,7 @@ sidebar_position: 1
 description: Provide Vipps and MobilePay payments for Shopware.
 pagination_next: null
 pagination_prev: null
+section: Plugins
 ---
 END_METADATA -->
 

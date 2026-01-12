@@ -1,8 +1,3 @@
----
-# Facet metadata
-section: Plugins
----
-
 <!-- START_METADATA
 ---
 title: Install and configure Shopware
@@ -11,6 +6,7 @@ sidebar_position: 10
 description: How to install and configure the Shopware Payments plugin
 pagination_next: null
 pagination_prev: null
+section: Plugins
 ---
 END_METADATA -->
 

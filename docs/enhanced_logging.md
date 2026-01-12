@@ -1,8 +1,3 @@
----
-# Facet metadata
-section: Plugins
----
-
 <!-- START_METADATA
 ---
 title: Enhanced logging
@@ -11,6 +6,7 @@ sidebar_position: 30
 description: How to Enable enhanced logging for the Shopware Payments plugin
 pagination_next: null
 pagination_prev: null
+section: Plugins
 ---
 END_METADATA -->
 
