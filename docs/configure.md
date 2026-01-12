@@ -1,3 +1,8 @@
+---
+# Facet metadata
+section: Plugins
+---
+
 <!-- START_METADATA
 ---
 title: Install and configure Shopware
