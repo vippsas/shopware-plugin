@@ -38,7 +38,7 @@ className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold t
 - [Single payments](#single-payments)
 - [How to get started](#how-to-get-started)
 - [Installation](#installation)
-- [How to get account keys from the merchant portal](#how-to-get-account-keys-from-merchant-portal)
+- [How to get account keys from the business portal](#how-to-get-account-keys-from-business-portal)
   - [In which countries can I use Vipps MobilePay?](#in-which-countries-can-i-use-vipps-mobilepay)
   - [In which countries can I use MobilePay?](#in-which-countries-can-i-use-mobilepay)
   - [For how long is an order reserved?](#for-how-long-is-an-order-reserved)
@@ -70,7 +70,7 @@ When you enable this plugin, your customers will be able to choose Vipps or Mobi
 ## How to get started
 
 - Sign up to use [*Payment Integration*](https://vippsmobilepay.com/online/payment-integration).
-- After 1–2 days, you will get an email with login details to the Merchant Portal, [portal.vippsmobilepay.com](https://portal.vippsmobilepay.com/), where you can get the API credentials.
+- After 1–2 days, you will get an email with login details to the business portal, [portal.vippsmobilepay.com](https://portal.vippsmobilepay.com/), where you can get the API credentials.
 - Download and configure.
 
 For more details, see [Applying for services](https://developer.vippsmobilepay.com/docs/knowledge-base/applying-for-services/).
@@ -79,7 +79,7 @@ For more details, see [Applying for services](https://developer.vippsmobilepay.c
 
 - [Installation](./docs/configure.md)
 
-## How to get account keys from Merchant Portal
+## How to get account keys from the business portal
 
 1. Sign in to [portal.vippsmobilepay.com](https://portal.vippsmobilepay.com/).
 2. In the *Developer* section, choose *Production Keys*. Here you can find the merchant serial number (6 figures).
