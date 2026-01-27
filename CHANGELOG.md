@@ -4,7 +4,7 @@ title: Shopware Changelog
 sidebar_position: 100
 description: All notable changes to the Shopware plugin will be documented in this file.
 pagination_next: null
-pagination_prev: null
+pagination_prev: plugins-ext/shopware/docs/enhanced_logging
 section: Plugins
 ---
 END_METADATA -->

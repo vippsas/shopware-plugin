@@ -4,8 +4,8 @@ title: Install and configure Shopware
 sidebar_label: Install and configure
 sidebar_position: 10
 description: How to install and configure the Shopware Payments plugin
-pagination_next: null
-pagination_prev: null
+pagination_next: plugins-ext/shopware/docs/adjust_payments
+pagination_prev: plugins-ext/shopware/README
 section: Plugins
 ---
 END_METADATA -->
@@ -92,11 +92,11 @@ Select the sales channel that matches the [requirements](#requirements-for-the-s
 #### Parameters
 
 - API Endpoint - Vipps MobilePay API URL, choose "Test environment" or "Production environment".
-- Vipps MobilePay MSN - can be obtained through [portal.vippsmobilepay.com](https://portal.vippsmobilepay.com/).
-- Vipps MobilePay Client ID - can be obtained through [portal.vippsmobilepay.com](https://portal.vippsmobilepay.com/).
-- Vipps MobilePay Client secret - can be obtained through [portal.vippsmobilepay.com](https://portal.vippsmobilepay.com/).
-- Vipps MobilePay Primary subscription key - can be obtained through [portal.vippsmobilepay.com](https://portal.vippsmobilepay.com/).
-- Vipps MobilePay Secondary subscription key - can be obtained through [portal.vippsmobilepay.com](https://portal.vippsmobilepay.com/).
+- Vipps MobilePay MSN - can be obtained through the [business portal](https://portal.vippsmobilepay.com/).
+- Vipps MobilePay Client ID - can be obtained through the [business portal](https://portal.vippsmobilepay.com/).
+- Vipps MobilePay Client secret - can be obtained through the [business portal](https://portal.vippsmobilepay.com/).
+- Vipps MobilePay Primary subscription key - can be obtained through the [business portal](https://portal.vippsmobilepay.com/).
+- Vipps MobilePay Secondary subscription key - can be obtained through the [business portal](https://portal.vippsmobilepay.com/).
 
 ![Plugin config example](./images/installation/plugin_temp_config.png)
 
