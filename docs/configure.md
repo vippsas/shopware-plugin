@@ -123,6 +123,6 @@ It's **important** that the sales channel is configured the right way. For examp
 
 | Merchant     | Countries    | Default Country | Languages | Default Languages | Currencies      | Default Currencies | Payment Methods                       |  Test environment  |  Production environment  |
 |--------------|--------------|-----------------|-----------|-------------------|-----------------|--------------------|---------------------------------------|:------------------:|:------------------------:|
-| Vipps        | 🇳🇴 Norway    | Norway          | Norsk     | Norsk             | Norwegian krone | Norwegian krone    | Vipps \| Vipps MobilePay \| ePayment  |         ✅          |            ✅             |
-| MobilePay DA | 🇩🇰 Denmark   | Denmark         | Danish    | Danish            | Danish krone    | Danish krone       | MobilePay \| Vipps MobilePay \| ePayment |         ❌          |            ✅             |
-| MobilePay FI | 🇫🇮 Finland   | Finland         | Suomi     | Suomi             | Euro            | Euro               | MobilePay \| Vipps MobilePay \| ePayment |         ❌          |            ✅             |
+| Vipps        | 🇳🇴 Norway    | Norway          | Norsk     | Norsk             | Norwegian krone | Norwegian krone    | Vipps \| Vipps MobilePay \| ePayment  | <span role="img" aria-label="Yes">✅</span> | <span role="img" aria-label="Yes">✅</span> |
+| MobilePay DA | 🇩🇰 Denmark   | Denmark         | Danish    | Danish            | Danish krone    | Danish krone       | MobilePay \| Vipps MobilePay \| ePayment | <span role="img" aria-label="No">❌</span> | <span role="img" aria-label="Yes">✅</span> |
+| MobilePay FI | 🇫🇮 Finland   | Finland         | Suomi     | Suomi             | Euro            | Euro               | MobilePay \| Vipps MobilePay \| ePayment | <span role="img" aria-label="No">❌</span> | <span role="img" aria-label="Yes">✅</span> |

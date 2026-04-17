@@ -26,11 +26,11 @@ where we check the state of the payment
 
 | State                     | Shopware Payment status | Shopware Delivery status | Shopware Order status | Supported |
 |:--------------------------|------------------------:|-------------------------:|----------------------:|:---------:|
-| [CREATED](#created)       |                    Open |                     Open |                  Open |     ✅    |
-| [ABORTED](#aborted)       |               Cancelled |                     Open |                  Open |     ✅    |
-| [EXPIRED](#expired)       |                    Open |                     Open |                  Open |     ❌    |
-| [AUTHORIZED](#authorized) |              Authorized |                     Open |                  Open |     ✅    |
-| [TERMINATED](#terminated) |                    Open |                     Open |                  Open |     ❌    |
+| [CREATED](#created)       |                    Open |                     Open |                  Open | <span role="img" aria-label="Yes">✅</span> |
+| [ABORTED](#aborted)       |               Cancelled |                     Open |                  Open | <span role="img" aria-label="Yes">✅</span> |
+| [EXPIRED](#expired)       |                    Open |                     Open |                  Open | <span role="img" aria-label="No">❌</span> |
+| [AUTHORIZED](#authorized) |              Authorized |                     Open |                  Open | <span role="img" aria-label="Yes">✅</span> |
+| [TERMINATED](#terminated) |                    Open |                     Open |                  Open | <span role="img" aria-label="No">❌</span> |
 
 ### Created
 

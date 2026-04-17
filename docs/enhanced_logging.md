@@ -50,7 +50,7 @@ This is the content that gets set in the logging:
 
 |    Level |                                                                     Message | Code |  Shows by default  |  Shows with enhanced logging  |
 |---------:|----------------------------------------------------------------------------:|-----:|:------------------:|:-----------------------------:|
-|    Debug |                                                  Detailed debug information |  100 |         ❌          |               ✅               |
-|  Warning | Exceptional occurrences that are not errors.<br/> (e.g., use of deprecated APIs) |  300 |         ✅          |               ✅               |
-|    Error |                                                              Runtime errors |  400 |         ✅          |               ✅               |
-| Critical |                                                         Critical conditions |  500 |         ✅          |               ✅               |
+|    Debug |                                                  Detailed debug information |  100 | <span role="img" aria-label="No">❌</span> | <span role="img" aria-label="Yes">✅</span> |
+|  Warning | Exceptional occurrences that are not errors.<br/> (e.g., use of deprecated APIs) |  300 | <span role="img" aria-label="Yes">✅</span> | <span role="img" aria-label="Yes">✅</span> |
+|    Error |                                                              Runtime errors |  400 | <span role="img" aria-label="Yes">✅</span> | <span role="img" aria-label="Yes">✅</span> |
+| Critical |                                                         Critical conditions |  500 | <span role="img" aria-label="Yes">✅</span> | <span role="img" aria-label="Yes">✅</span> |
