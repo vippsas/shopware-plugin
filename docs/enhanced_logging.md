@@ -31,7 +31,7 @@ Scroll down to *Vipps MobilePay Settings*, where you will see *Enable enhanced l
 
 Click *Enable enhanced logging* and clear the cache.
 
-It's now possible to see all the logs `https://<domain>/admin#/sw/settings/logging/list` or *Settings* -> *System* -> *Event logs*.
+It's now possible to see all the logs at `https://<domain>/admin#/sw/settings/logging/list` or *Settings* -> *System* -> *Event logs*.
 
 For example, a log could look like this:
 
