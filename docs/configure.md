@@ -83,7 +83,7 @@ The plugin is installed and activated now go to the [configure](#configure) sect
 
 ### Configuration of plugin
 
-Start by clicking the 3 dots and the click *Configure*.
+Start by clicking the 3 dots and then click *Configure*.
 
 ![Configure plugin](./images/installation/plugin_configure.png)
 

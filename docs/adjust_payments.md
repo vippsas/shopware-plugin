@@ -86,7 +86,7 @@ If you want to refund the full amount of the captured amount, then just click `R
 
 #### Partial refund
 
-If you want to refund a part of the captured amount, then you just change the amount you want to and the click `Refund`. It will change the Payment Status to `Partial refunded`.
+If you want to refund a part of the captured amount, then you just change the amount and then click `Refund`. It will change the Payment Status to `Partial refunded`.
 
 #### Cancel
 
@@ -94,7 +94,7 @@ If you want to cancel an order, make sure there is nothing captured or refunded,
 
 ## Delivery status
 
-We are listing to *delivery status*.
+We are listing the *delivery status*.
 
 ### Shipped
 
