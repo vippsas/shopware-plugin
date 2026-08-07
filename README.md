@@ -14,7 +14,7 @@ END_METADATA -->
 ![Support and development by WEXO ](./docs/images/wexo.svg#gh-light-mode-only)![Support and development by WEXO](./docs/images/wexo_dark.svg#gh-dark-mode-only)
 
 *This plugin is built and maintained by [WEXO](https://www.wexo.dk/) and is hosted on [GitHub](https://github.com/vippsas/shopware-plugin/releases).
-For support, contact [WEXO](https://www.wexo.dk/kontakt).*
+For support, contact [WEXO](https://www.wexo.dk/om-os/kontakt).*
 
 <!-- START_COMMENT -->
 💥 Please use the plugin pages on [https://developer.vippsmobilepay.com](https://developer.vippsmobilepay.com/docs/plugins-ext/shopware-plugin/). 💥
