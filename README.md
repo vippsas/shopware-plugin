@@ -14,7 +14,7 @@ END_METADATA -->
 ![Support and development by WEXO ](./docs/images/wexo.svg#gh-light-mode-only)![Support and development by WEXO](./docs/images/wexo_dark.svg#gh-dark-mode-only)
 
 *This plugin is built and maintained by [WEXO](https://www.wexo.dk/) and is hosted on [GitHub](https://github.com/vippsas/shopware-plugin/releases).
-For support, contact [WEXO](https://www.wexo.dk/om-os/kontakt).*
+For support, contact [WEXO](https://www.wexo.dk/).*
 
 <!-- START_COMMENT -->
 💥 Please use the plugin pages on [https://developer.vippsmobilepay.com](https://developer.vippsmobilepay.com/docs/plugins-ext/shopware-plugin/). 💥
@@ -118,7 +118,7 @@ If the order only contains virtual and downloadable products, it's possible to s
 
 ## How can I get help if I have any issues?
 
-For issues with your Vipps/MobilePay plugin for Shopware installation, [contact WEXO](https://www.wexo.dk/kontakt). For other issues, contact [Vipps MobilePay](https://developer.vippsmobilepay.com/docs/contact/).
+For issues with your Vipps/MobilePay plugin for Shopware installation, [contact WEXO](https://www.wexo.dk/). For other issues, contact [Vipps MobilePay](https://help.vippsmobilepay.com/).
 
 ### General FAQs
 
@@ -151,4 +151,4 @@ See [Changelog](CHANGELOG.md).
 ## Support
 
 For issues with the plugin,
-contact [WEXO](https://www.wexo.dk/kontakt).
+contact [WEXO](https://www.wexo.dk/).
