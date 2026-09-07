@@ -33,7 +33,7 @@ Coming soon
 
 ### GIT
 
-Start by navigating into `/var/www/<project-name>/custom/plugins/` then clone the repository with `SSH` or `HTTPS`
+Start by navigating into `/var/www/<project-name>/custom/plugins/`, then clone the repository with `SSH` or `HTTPS`.
 
 ```bash
 git clone git@github.com:vippsas/shopware-plugin.git VippsMobilePayEPayment
@@ -47,13 +47,13 @@ Installing the plugin without using the Shopware UI and activating the plugin
 php bin/console plugin:install --activate VippsMobilepayEpayment
 ```
 
-After running the installation and activation of the plugin clear the cache.
+After running the installation and activation of the plugin, clear the cache.
 
 ```bash
 php bin/console cache:clear
 ```
 
-The plugin is now installed and activated go to [configure](#configure)
+The plugin is now installed and activated. Go to [configure](#configure).
 
 ### Shopware UI
 
@@ -69,7 +69,7 @@ The plugin should now be available and should show up in the list.
 
 ![Plugin available](./images/installation/plugin_available.png)
 
-Click *install* and wait for the page to refresh. When it's done click the active slider.
+Click *install* and wait for the page to refresh. When it's done, click the active slider.
 
 ![Plugin activate](./images/installation/plugin_activate.png)
 
@@ -77,7 +77,7 @@ It should now be blue.
 
 ![Plugin install and activated](./images/installation/plugin_installed_and_activated.png)
 
-The plugin is installed and activated now go to the [configure](#configure) section.
+The plugin is installed and activated. Now go to the [configure](#configure) section.
 
 ## Configure
 

@@ -21,8 +21,8 @@ END_METADATA -->
 
 ## Order detail
 
-When an order comes in from the creates it with [Vipps MobilePay's API](https://developer.vippsmobilepay.com/api/epayment/#tag/QueryPayments/operation/getPayment)
-where we check the state of the payment
+When an order comes in from Vipps MobilePay, the plugin creates it in Shopware and checks the state of the payment with
+[Vipps MobilePay's API](https://developer.vippsmobilepay.com/api/epayment/#tag/QueryPayments/operation/getPayment).
 
 | State                     | Shopware Payment status | Shopware Delivery status | Shopware Order status | Supported |
 |:--------------------------|------------------------:|-------------------------:|----------------------:|:---------:|
