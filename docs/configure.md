@@ -4,8 +4,6 @@ title: Install and configure Shopware
 sidebar_label: Install and configure
 sidebar_position: 10
 description: How to install and configure the Shopware Payments plugin
-pagination_next: plugins-ext/shopware/docs/adjust_payments
-pagination_prev: plugins-ext/shopware/README
 section: Plugins
 ---
 END_METADATA -->
