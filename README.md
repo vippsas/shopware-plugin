@@ -3,7 +3,6 @@
 title: "Vipps/MobilePay for Shopware plugin"
 sidebar_position: 1
 description: Provide Vipps and MobilePay payments for Shopware.
-pagination_next: plugins-ext/shopware/docs/configure
 pagination_prev: null
 section: Plugins
 ---
